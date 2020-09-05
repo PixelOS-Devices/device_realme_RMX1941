@@ -135,6 +135,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy/private
 
 # System Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
