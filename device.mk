@@ -54,7 +54,11 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor    
+    libhwbinder.vendor
+
+# ImsInit
+PRODUCT_PACKAGES += \
+    ImsInit
 
 # Input/DT2W
 PRODUCT_COPY_FILES += \
@@ -124,7 +128,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-ims-common \
     mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common    
+    mediatek-telephony-common
 
 # Tethering
 PRODUCT_PACKAGES += \
