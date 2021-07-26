@@ -81,3 +81,8 @@ ro.mtk_perf_response_time=1
 # end of device/oppo/oppo6762/system.prop
 
 #
+
+# IMS 
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
