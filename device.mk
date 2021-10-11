@@ -86,6 +86,13 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/ACCDET.kl \
     $(DEVICE_PATH)/configs/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster3.vendor \
+    libkeymaster3support.vendor \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.RMX1941
