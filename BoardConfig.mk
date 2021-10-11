@@ -118,9 +118,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := /proc/touchpanel/double_tap_enable
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
 
