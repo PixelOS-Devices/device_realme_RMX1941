@@ -65,8 +65,8 @@ PRODUCT_PACKAGES += \
 
 # Dependencies of kpoc_charger
 PRODUCT_PACKAGES += \
-    libsuspend \
-    android.hardware.health@2.0
+    android.hardware.health@2.0 \
+    libsuspend
 
 # Display
 PRODUCT_PACKAGES += \
@@ -89,6 +89,12 @@ PRODUCT_PACKAGES += \
 # GCamGO
 PRODUCT_PACKAGES += \
     CameraGo
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
