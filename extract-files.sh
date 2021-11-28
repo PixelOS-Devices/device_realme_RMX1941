@@ -66,6 +66,12 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek)
             "${PATCHELF}" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
             ;;
+        vendor/bin/hw/camerasloganserver)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v29.so" "${2}"
+            ;;
+        vendor/lib/libmtkcam_stdutils.so|vendor/lib64/libmtkcam_stdutils.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v29.so" "${2}"
+            ;;
     esac
 }
 
