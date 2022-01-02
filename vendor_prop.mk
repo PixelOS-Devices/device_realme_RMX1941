@@ -4,6 +4,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt \
     debug.sf.disable_backpressure=1 \
     drm.service.enabled=true \
+    ro.vendor.perf.scroll_opt=true \
     persist.log.tag.C2K_RIL-SIM=S \
     persist.log.tag.CarrierExpressServiceImpl=S \
     persist.log.tag.CarrierExpressServiceImplExt=S \
