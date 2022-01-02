@@ -90,6 +90,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0 \
     libsuspend
 
+# Disable Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
