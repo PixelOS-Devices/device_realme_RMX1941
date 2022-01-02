@@ -337,8 +337,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    WifiOverlay \
-    wpa_supplicant.conf
+    WifiOverlay
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.3.vendor \
