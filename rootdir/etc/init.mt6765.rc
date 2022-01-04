@@ -617,6 +617,8 @@ on post-fs-data
 on boot
     write /proc/bootprof "INIT:boot"
 
+    stop console
+
     # Disable edge limit control interface
     write /proc/touchpanel/oppo_tp_limit_enable 0
 
