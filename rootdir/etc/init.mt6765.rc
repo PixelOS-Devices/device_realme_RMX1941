@@ -673,6 +673,12 @@ on boot
     chown system system /sys/class/leds/green/trigger
     chown system system /sys/class/leds/blue/trigger
 
+    # OTG
+    chown system system /sys/class/power_supply/usb/otg_switch
+    chmod 0660 /sys/class/power_supply/usb/otg_switch
+    write /sys/class/power_supply/usb/otg_switch 1
+
+
     # Permission for hibernation
     chown radio system /sys/power/tuxonice
     chown radio system /sys/power/tuxonice/do_hibernate
