@@ -1082,6 +1082,14 @@ on property:ro.vendor.gsi.build.flavor=*
     restorecon /dev/loop-control
 #endif /*ODM_CM_EDIT*/
 
+# Charger
+service charger /system/bin/chargeonlymode
+    class charger
+    critical
+    #seclabel u:r:charger:s0
+    group system graphics
+    seclabel u:r:healthd:s0
+
 # Performance profiles
 on property:perf_profile=1
     exec - root -- /system/bin/perf_profile.sh 1
@@ -1110,3 +1118,4 @@ on post-fs-data
 on property:sys.boot_completed=1
     # Stop the logger service
     stop logger
+
