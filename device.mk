@@ -284,6 +284,10 @@ PRODUCT_PACKAGES += \
     fstab.mt6765 \
     ueventd.mt6765.rc
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.mt6765.rc
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
