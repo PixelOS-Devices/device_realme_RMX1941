@@ -245,4 +245,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     vendor.camera.mdp.cz.enable=1 \
     vendor.camera.mdp.dre.enable=0 \
     vendor.connsys.driver.ready=no \
-    vendor.mtk.vdec.waitkeyframeforplay=7 
+    vendor.mtk.vdec.waitkeyframeforplay=7 \
+    debug.hwui.use_hint_manager=true \
+    debug.hwui.target_cpu_time_percent=30 
