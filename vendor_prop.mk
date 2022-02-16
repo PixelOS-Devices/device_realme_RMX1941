@@ -247,4 +247,5 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     vendor.connsys.driver.ready=no \
     vendor.mtk.vdec.waitkeyframeforplay=7 \
     debug.hwui.use_hint_manager=true \
-    debug.hwui.target_cpu_time_percent=30 
+    debug.hwui.target_cpu_time_percent=30 \
+    debug.renderengine.backend=skiaglthreaded
