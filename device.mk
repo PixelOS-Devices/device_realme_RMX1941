@@ -44,9 +44,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@5.0.vendor \
     android.hardware.audio.common@5.0-util.vendor \
     android.hardware.audio.effect@5.0-impl \
-    android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.soundtrigger@2.2.vendor \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -80,11 +78,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.2.vendor \
-    android.hardware.camera.device@3.3.vendor \
-    android.hardware.camera.device@3.4.vendor \
     android.hardware.camera.device@3.5.vendor \
-    android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.4.vendor
 
 # Dependencies of kpoc_charger
@@ -109,6 +103,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1
 
 # DRM
+PRODUCT_PACKAGES += \
+    libmockdrmcryptoplugin \
+
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.3-service.clearkey
@@ -135,7 +132,6 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0 \
     android.hardware.gnss@2.0.vendor
 
 # HIDL
@@ -352,7 +348,8 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v30.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcompiler_rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcompiler_rt.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v29.so \
-    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v30.so
+    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v30.so \
+    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libunwindstack.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libunwindstack-v30.so
 
 # WiFi
 PRODUCT_PACKAGES += \
