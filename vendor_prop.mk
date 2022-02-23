@@ -2,7 +2,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     dalvik.vm.heapgrowthlimit=256m \
     dalvik.vm.heapsize=512m \
     dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt \
-    debug.sf.disable_backpressure=1 \
     drm.service.enabled=true \
     ro.vendor.perf.scroll_opt=true \
     persist.log.tag.C2K_RIL-SIM=S \
