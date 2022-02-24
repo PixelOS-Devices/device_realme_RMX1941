@@ -640,4 +640,7 @@
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">false</bool>
 
+    <!-- Whether of not wallpaper scrolling should be on or not. It may cuz lag in some low-end devices -->
+     <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
+
 </resources>
