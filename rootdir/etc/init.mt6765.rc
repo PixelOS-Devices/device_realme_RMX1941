@@ -1038,10 +1038,6 @@ on property:sys.boot_completed=1 && property:ro.boot.atm=enable
 on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
 
-# FPSGO FBT Game
-on boot
-    insmod /vendor/lib/modules/fpsgo.ko
-
 # Qiang.shao@PSW.AD.OppoFeature.CommonSoft.1181235, 2016/07/30, Add for self_init domain to access block_device for init prop
 service prop-adap-core /vendor/bin/self-init core
     class core
