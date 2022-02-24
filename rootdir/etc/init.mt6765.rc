@@ -2,13 +2,9 @@
 
 import vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6765.usb.rc
-import /FWUpgradeInit.rc
 import vendor/etc/init/hw/init.volte.rc
 import vendor/etc/init/hw/init.mal.rc
 import vendor/etc/init/hw/init.sensor_1_0.rc
-import /init.oppo.face.rc
-import /init.oppo.seccommon.rc
-#endif
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import vendor/etc/init/hw/init.modem.rc
@@ -1035,12 +1031,6 @@ on property:sys.boot_completed=1 && property:ro.boot.atm=enable
 
 on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
-
-#ifdef ODM_CM_EDIT
-# chengzhu.You@ODM.CM.ANDROID, 2020/07/01, Add for gsi CtsOsTestCases
-on property:ro.vendor.gsi.build.flavor=*
-    restorecon /dev/loop-control
-#endif /*ODM_CM_EDIT*/
 
 # Charger
 service charger /system/bin/chargeonlymode
