@@ -117,6 +117,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     persist.log.tag.GED=S \
     persist.log.tag.hwcomposer=S \
     persist.log.tag.netd=S \
+    persist.log.tag.MDP=S \
     persist.radio.multisim.config=dsds \
     persist.sys.horae.enable=1 \
     persist.sys.hypnus.daemon.enable=1 \
