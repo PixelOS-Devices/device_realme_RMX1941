@@ -143,10 +143,6 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-# ImsInit
-PRODUCT_PACKAGES += \
-    ImsInit
-
 # Input/DT2W
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/touchpanel.kl \
