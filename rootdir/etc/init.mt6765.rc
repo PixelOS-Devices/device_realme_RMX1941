@@ -1089,3 +1089,15 @@ service charger /system/bin/chargeonlymode
     #seclabel u:r:charger:s0
     group system graphics
     seclabel u:r:healthd:s0
+
+# Import Swap Enable Script from realmeUI
+service swap_enable /system/bin/sh /system/etc/swap_enable.sh
+    class late_start
+    disabled
+    user root
+    group system
+    oneshot
+
+on property:sys.boot_completed=1
+    chmod +x /system/etc/swap_enable.sh
+    start swap_enable
