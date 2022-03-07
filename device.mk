@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
 
 # GCamGO
 PRODUCT_PACKAGES += \
-    CameraGo
+    GCamGOPrebuilt
 
 # Health
 PRODUCT_PACKAGES += \
