@@ -165,7 +165,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     persist.vendor.vilte_support=1 \
     persist.vendor.viwifi_support=1 \
     persist.vendor.volte_support=1 \
-    ro.apex.updatable=true \
     ro.control_privapp_permissions=log \
     ro.crypto.volume.filenames_mode=aes-256-cts \
     ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp \
